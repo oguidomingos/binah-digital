@@ -1,4 +1,4 @@
-import { Check } from 'lucide-react'
+import { Check, TrendingUp } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { serviceTiers, CALENDAR_URL } from '@/data/content'
 
@@ -7,7 +7,7 @@ export function Services() {
     <section id="servicos" className="py-24 sm:py-32" aria-labelledby="servicos-heading">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="font-mono text-sm font-medium text-accent">// serviços</span>
+          <span className="font-mono text-sm font-medium text-accent">// investimento</span>
           <h2
             id="servicos-heading"
             className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl"
@@ -16,7 +16,8 @@ export function Services() {
             <span className="gradient-text">seu crescimento</span>
           </h2>
           <p className="mt-4 text-base text-muted-foreground sm:text-lg">
-            Três níveis de serviço, um objetivo: escalar seu negócio com AI.
+            Três níveis de serviço. Um objetivo: escalar seu negócio com AI. Contrato mínimo de 3
+            meses.
           </p>
         </div>
 
@@ -39,15 +40,16 @@ export function Services() {
 
               <div className="mb-6">
                 <h3 className="text-xl font-bold">{tier.name}</h3>
+                <p className="mt-1 text-xs font-medium text-accent">{tier.idealFor}</p>
                 <p className="mt-2 text-sm text-muted-foreground">{tier.description}</p>
               </div>
 
-              <div className="mb-8">
+              <div className="mb-6">
                 <span className="text-4xl font-extrabold tracking-tight">{tier.price}</span>
                 <span className="text-sm text-muted-foreground">/mês</span>
               </div>
 
-              <ul className="mb-8 flex-1 space-y-3" role="list">
+              <ul className="mb-6 flex-1 space-y-3" role="list">
                 {tier.features.map((feature) => (
                   <li key={feature} className="flex items-start gap-3">
                     <Check className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
@@ -55,6 +57,11 @@ export function Services() {
                   </li>
                 ))}
               </ul>
+
+              <div className="mb-6 flex items-start gap-2 rounded-lg bg-emerald/5 px-3 py-2">
+                <TrendingUp className="mt-0.5 h-4 w-4 shrink-0 text-emerald" />
+                <span className="text-xs text-emerald">{tier.projection}</span>
+              </div>
 
               <a
                 href={CALENDAR_URL}

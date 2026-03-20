@@ -4,9 +4,9 @@ import { cn } from '@/lib/utils'
 import { CALENDAR_URL } from '@/data/content'
 
 const navLinks = [
-  { href: '#servicos', label: 'Serviços' },
-  { href: '#como-funciona', label: 'Como Funciona' },
   { href: '#cases', label: 'Cases' },
+  { href: '#como-funciona', label: 'Como Funciona' },
+  { href: '#servicos', label: 'Planos' },
   { href: '#faq', label: 'FAQ' },
 ]
 

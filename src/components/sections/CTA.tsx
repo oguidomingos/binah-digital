@@ -1,4 +1,4 @@
-import { ArrowRight, MessageCircle } from 'lucide-react'
+import { ArrowRight, Calendar, MessageCircle } from 'lucide-react'
 import { CALENDAR_URL, WHATSAPP_URL } from '@/data/content'
 
 export function CTA() {
@@ -18,20 +18,35 @@ export function CTA() {
               id="cta-heading"
               className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl"
             >
-              Pronto para{' '}
-              <span className="gradient-text">escalar com AI?</span>
+              Sessão diagnóstico{' '}
+              <span className="gradient-text">gratuita</span>
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-base text-muted-foreground sm:text-lg">
-              Agende uma call de diagnóstico gratuita. Em 30 minutos, você terá um plano de ação
-              personalizado para o seu negócio.
+              Em 30 minutos, mapeamos onde está o dinheiro escondido no seu negócio. Você sai com um
+              plano de ação personalizado — mesmo que não feche com a gente.
             </p>
+
+            <div className="mx-auto mt-8 max-w-md space-y-3 text-left">
+              <div className="flex items-center gap-3 text-sm text-muted-foreground">
+                <Calendar className="h-4 w-4 shrink-0 text-accent" />
+                <span>30 minutos de análise do seu negócio</span>
+              </div>
+              <div className="flex items-center gap-3 text-sm text-muted-foreground">
+                <Calendar className="h-4 w-4 shrink-0 text-accent" />
+                <span>Mapeamento de gargalos e oportunidades</span>
+              </div>
+              <div className="flex items-center gap-3 text-sm text-muted-foreground">
+                <Calendar className="h-4 w-4 shrink-0 text-accent" />
+                <span>Plano de ação personalizado com quick wins</span>
+              </div>
+            </div>
 
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <a
                 href={CALENDAR_URL}
                 className="inline-flex items-center gap-2 rounded-lg bg-accent px-8 py-4 text-base font-semibold text-background transition-all hover:bg-accent-dark hover:shadow-lg hover:shadow-accent/20"
               >
-                Agendar Call Gratuita
+                Agendar Diagnóstico Gratuito
                 <ArrowRight className="h-4 w-4" />
               </a>
               <a

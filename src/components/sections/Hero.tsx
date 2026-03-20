@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowRight, Sparkles } from 'lucide-react'
+import { ArrowDown, ArrowRight, Shield, Sparkles, Zap } from 'lucide-react'
 import { CALENDAR_URL, WHATSAPP_URL } from '@/data/content'
 
 export function Hero() {
@@ -29,18 +29,19 @@ export function Hero() {
         <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-accent/20 bg-accent/5 px-4 py-1.5">
           <Sparkles className="h-3.5 w-3.5 text-accent" />
           <span className="text-xs font-medium uppercase tracking-[0.15em] text-accent">
-            Assessoria de Crescimento com AI
+            Binah Growth Engine™
           </span>
         </div>
 
         <h1 className="text-4xl font-extrabold leading-[1.1] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
-          Seu negócio crescendo{' '}
-          <span className="gradient-text">com inteligência artificial</span>
+          Seu negócio cresce.{' '}
+          <span className="gradient-text">A operação não acompanha.</span>{' '}
+          <span className="text-foreground">A gente resolve com AI.</span>
         </h1>
 
         <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg md:text-xl">
-          Diagnóstico, automações e agentes AI sob medida para PMEs que querem escalar.
-          Resultados em dias, não meses.
+          Implementamos agentes de AI, automações e growth marketing sob medida para PMEs que querem
+          escalar — sem aumentar o time. Resultados em 30 dias ou trabalhamos de graça.
         </p>
 
         <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
@@ -48,7 +49,7 @@ export function Hero() {
             href={CALENDAR_URL}
             className="inline-flex items-center gap-2 rounded-lg bg-accent px-8 py-4 text-base font-semibold text-background transition-all hover:bg-accent-dark hover:shadow-lg hover:shadow-accent/20"
           >
-            Agendar Call Gratuita
+            Agendar Diagnóstico Gratuito
             <ArrowRight className="h-4 w-4" />
           </a>
           <a
@@ -63,24 +64,24 @@ export function Hero() {
 
         <div className="mt-16 flex flex-wrap items-center justify-center gap-8 text-sm text-muted-foreground">
           <div className="flex items-center gap-2">
-            <div className="h-2 w-2 rounded-full bg-emerald" />
-            <span>Resultados em 48h</span>
+            <Zap className="h-4 w-4 text-emerald" />
+            <span>Resultados em 7 dias</span>
           </div>
           <div className="flex items-center gap-2">
-            <div className="h-2 w-2 rounded-full bg-accent" />
+            <Shield className="h-4 w-4 text-accent" />
+            <span>Garantia de 30 dias</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <Sparkles className="h-4 w-4 text-violet" />
             <span>AI sob medida</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="h-2 w-2 rounded-full bg-violet" />
-            <span>ROI mensurável</span>
           </div>
         </div>
       </div>
 
       <a
-        href="#servicos"
+        href="#cases"
         className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-muted-foreground transition-colors hover:text-accent"
-        aria-label="Rolar para serviços"
+        aria-label="Rolar para cases"
       >
         <ArrowDown className="h-6 w-6" />
       </a>

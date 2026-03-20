@@ -1,9 +1,10 @@
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { Hero } from '@/components/sections/Hero'
+import { Testimonials } from '@/components/sections/Testimonials'
 import { Services } from '@/components/sections/Services'
 import { HowItWorks } from '@/components/sections/HowItWorks'
-import { Testimonials } from '@/components/sections/Testimonials'
+import { Guarantee } from '@/components/sections/Guarantee'
 import { FAQ } from '@/components/sections/FAQ'
 import { CTA } from '@/components/sections/CTA'
 import { WhatsAppFloat } from '@/components/ui/WhatsAppFloat'
@@ -16,9 +17,10 @@ export default function App() {
       <Header />
       <main>
         <Hero />
-        <Services />
-        <HowItWorks />
         <Testimonials />
+        <HowItWorks />
+        <Services />
+        <Guarantee />
         <FAQ />
         <CTA />
       </main>
